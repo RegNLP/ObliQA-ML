@@ -10,7 +10,7 @@ From that original ObliQA dataset, we **keep only the questions** that are linke
 ObliQA-MultiPassage/  
 └── ObliQA_MultiPassage.json
 ```
----
+
 
 ## Table of Contents
 
@@ -25,7 +25,6 @@ ObliQA-MultiPassage/
 7. [Contributing](#contributing)  
 8. [License](#license)  
 
----
 
 ## Overview
 
@@ -36,7 +35,6 @@ ObliQA-MultiPassage is a multi-passage extension of the original ObliQA dataset.
 - **Dataset statistics** (number of passages per question)  
 - **Train/Validation/Test splits** (70/15/15 by default)  
 
----
 
 ## Data
 
@@ -48,7 +46,6 @@ ObliQA-MultiPassage is a multi-passage extension of the original ObliQA dataset.
 
 `ObliQA-MultiPassage/ObliQA_MultiPassage.json`
 
----
 
 ## Installation & Prerequisites
 
@@ -91,7 +88,7 @@ Running the Validator
     
 -   Final validated data appears in `ObliQA_Validated_MultiPassage.json`.
 
-Statistics & Splitting
+## Statistics & Splitting
 
 After validation, two helper scripts/notebook cells provide:
 
@@ -113,9 +110,16 @@ After validation, two helper scripts/notebook cells provide:
     -   `ObliQA_MultiPassage_val.json`
         
     -   `ObliQA_MultiPassage_test.json`
-        
 
-----------
+Below is the distribution of questions by number of associated passages in each split (with totals):
+
+| Split        | #Questions | 2 Passages | 3 Passages | 4 Passages | 5 Passages | 6 Passages |
+|--------------|-----------:|-----------:|-----------:|-----------:|-----------:|-----------:|
+| **Train**       |       **2083** |       1559 |        382 |         90 |         34 |         18 |
+| **Validation**  |        **446** |        322 |         93 |         16 |          9 |          6 |
+| **Test**        |        **447** |        326 |         88 |         21 |         11 |          1 |
+| **Total**       | **2976**   | **2207**   | **563**    | **127**    | **54**     | **25**     |
+
 
 ## Directory Structure
 
